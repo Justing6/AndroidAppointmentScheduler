@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.justin.AppointmentSystem" >
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.example.justin.AppointmentSystem.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.example.justin.AppointmentSystem.AddReservation" android:label="Add a Reservation" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.example.justin.AppointmentSystem.FindSlot" android:label="FindSlot"/>
+        <activity android:name="com.example.justin.AppointmentSystem.LookupReservation" android:label="Lookup" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.example.justin.AppointmentSystem.DisplayInfo" android:label="Displayinfo"/>
+        <activity android:name="com.example.justin.AppointmentSystem.RescheduleReservation" android:label="Reschedule"/>
+    </application>
+
+</manifest>

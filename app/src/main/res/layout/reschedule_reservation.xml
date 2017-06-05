@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/x">
+
+    <TextView
+        android:lineSpacingExtra="3dp"
+        android:text="@string/find_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="56dp"
+        android:id="@+id/FindSlotField"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/findIDDate"
+        android:layout_alignStart="@+id/findIDDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/submitButton"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignLeft="@+id/findIDDate"
+        android:layout_alignStart="@+id/findIDDate"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:layout_above="@+id/submitButton"
+        android:layout_alignRight="@+id/findIDDate"
+        android:layout_alignEnd="@+id/findIDDate"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:lineSpacingExtra="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/date_box"
+        android:id="@+id/findIDDate"
+        android:textColor="#ff000000"
+        android:textSize="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/dateButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Reschedule"
+        android:id="@+id/confirmbutton"
+        android:layout_above="@+id/findIDDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+</RelativeLayout>

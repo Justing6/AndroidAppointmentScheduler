@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Appointment System</string>
+    <string name="addRes">Create Appointment</string>
+    <string name="lookupRes">Lookup Appointment</string>
+    <string name="lookupprompt">Lookup Existing\nAppointment Information</string>
+    <string name="addprompt">Schedule a New Appointment</string>
+    <string name="welcome">Appointment System\n\nMain Menu</string>
+    <string name="button_send">Back</string>
+    <string name="find_id">Searching for an open time...</string>
+    <string name="date_box">Date</string>
+    <string name="action_settings">Settings</string>
+</resources>
